@@ -1,11 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 – Dynamic Web Fundamentals – Adeline Scott</title>
+    <meta name="description" content="A page for the class WDD 131 – Dynamic Web Fundamentals about Adeline Scott.">
+    <meta name="author" content="Adeline Scott">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <script src="scripts/getdates.js" defer></script>
 </head>
+
 <body>
-    <h1>WDD 131</h1>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/in/adeline-s-505967339/">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/4-ne/1?lang=eng&id=p17#p17">Scripture</a>
+            <a href="final-project/">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Adeline Scott</h1>
+        <div class="card-container">
+            <section class="card">
+                <h2>About Me</h2>
+                <div class="card-items">
+                    <div class="items1">
+                        <img src="images/portrait.jpg" alt="A picture of Adeline Scott.">
+                        <p>Hello! My name is Adeline.I am from the united states of America. Lorem ipsum dolor sit amet,
+                            consectetur adipisicing elit. Corrupti nemo vitae, facilis ipsum id commodi.</p>
+                    </div>
+                    <div class="items2">
+                        <h3>The United States</h3>
+                        <figure>
+                            <img src="images/usa.jpg" alt="Flag of the United States of America.">
+                            <figcaption>Flag of the United States</figcaption>
+                        </figure>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, unde?Lohxhthdr</p>
+                    </div>
+                </div>
+            </section>
+            <section class="card">
+                <h2>Web Dev Resources</h2>
+                <ul>
+                    <li>
+                        <a href="https://www.udemy.com/?srsltid=AfmBOopwTP82HNQRMeCrqlIAVcQWwDsHFl6V-eSJZtOXunP5wlJLh48i" target="_blank">Udemy</a>
+                    </li>
+                    <li>
+                        <a href="https://www.w3schools.com/" target="_blank">W3 Schools</a>
+                    </li>
+                    <li>
+                        <a href="https://stackoverflow.com/questions" target="_blank">Stack Overflow</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> | Adeline Scott | United States</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>
