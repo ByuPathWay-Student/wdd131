@@ -20,7 +20,7 @@ header nav {
     display: flex;
     padding: 1rem;
     justify-content: space-around;
-    background-color: rgb(76, 74, 70);
+    background-color: rgb(49, 47, 45);
 }
 
 header nav a {
@@ -120,7 +120,7 @@ figcaption {
 footer {
     text-align: center;
     padding: 2rem;
-    background-color: rgb(76, 74, 70);
+    background-color: rgb(49, 47, 45);
     color: white;
 
 }
