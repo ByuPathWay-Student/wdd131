@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Google Sans";
+}
+
+header,
+footer {
+    background-color: rgb(255, 165, 92);
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+}
+
+main {
+    max-width: 800px;
+    margin: 0;
+    display: block;
+    justify-self: center;
+}
+
+div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    place-items: center;
+    grid-gap: 25px;
+    text-align: center;
+}
+
+figure img {
+    width: 100%;
+    height: auto;
+    /* box-shadow: 0 0 5px; */
+    margin: 0.5;
+}
+figure img:hover {
+    box-shadow: 0 0 15px;
+}
+
+header h1 {
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 1.5rem;
+}
+
+nav {
+    padding: 1rem;
+}
+
+nav a {
+    color: #000000;
+}
+
+h2 {
+    display: block;
+    font-size: 1rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+#menu {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-decoration: none;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 15px
+}
+
+.navigation a:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-decoration: underline;
+
+}
+
+.open a {
+    display: block;
+}
