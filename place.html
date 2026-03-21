@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="author" content="Adeline Scott">
+    <meta name="description"
+        content="WDD 131: Dynamic Web Fundamentals | W03 Assignment: Country Page | A webpage for the country Spain">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Spain</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/large-hero-image.webp" media="(min-width: 1000px)">
+                <img src="images/small-hero-image.webp" alt="A picture of a city in Spain." width="400" height="200">
+            </picture>
+        </div>
+
+        <article class="data">
+            <h2>Data</h2>
+            <p>Population: 49,570,725</p>
+            <p>Capital: Madrid</p>
+            <p>Languages: Castilian Spanish</p>
+            <p>Currency: Euro</p>
+            <p>Calling Code: +34</p>
+            <p>Internet TLD: .es</p>
+        </article>
+
+        <article class="weather">
+            <h2>Weather <span class="emoticon"></span></h2>
+            <img src="images/cloud-sun-fill.svg" alt="An icon of a cloud covering the sun halfway.">
+            <p>Temperature: 7.78°C</p>
+            <p>Conditions: Cloudy</p>
+            <p>Wind: 6.4 km/h</p>
+            <p>Wind Chill: <span id="windChill"></span></p>
+        </article>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> | Adeline Scott | United States</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
