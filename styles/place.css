@@ -4,10 +4,15 @@
     font-family: "Roboto", sans-serif;
 }
 
+:root {
+    --main-color: rgb(172, 9, 9);
+    --accent-color: rgb(255, 193, 9);
+}
+
 header,
 footer {
     text-align: center;
-    background-color: rgb(172, 9, 9);
+    background-color: var(--main-color);
 }
 
 header h1 {
@@ -21,8 +26,8 @@ header h1 {
     display: block;
     width: 100%;
     height: auto;
-    border-top: 1rem solid rgb(255, 193, 9);
-    border-bottom: 1rem solid rgb(255, 193, 9);
+    border-top: 1rem solid var(--accent-color);
+    border-bottom: 1rem solid var(--accent-color);
 }
 
 article {
@@ -42,7 +47,7 @@ article {
 
 footer {
     padding: 1.5rem;
-    border-top: 1rem solid rgb(255, 193, 9);
+    border-top: 1rem solid var(--accent-color);
     color: white;
 }
 
@@ -82,7 +87,7 @@ footer p {
 
     article h2 {
         margin-bottom: 1rem;
-        border-bottom: 2px solid rgb(172, 9, 9);
+        border-bottom: 2px solid var(--main-color);
     }
 
     .weather img {
