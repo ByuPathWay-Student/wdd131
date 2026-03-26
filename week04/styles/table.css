@@ -1,0 +1,46 @@
+table {
+    border: 1px solid rgb(156, 156, 156);
+    width: 400px;
+    border-collapse: collapse;
+}
+
+caption {
+    caption-side: bottom;
+    font-size: smaller;
+    padding: 2px;
+}
+
+tr:first-child th {
+    background-color: rgb(48, 48, 106);
+    color: rgb(255, 255, 255);
+}
+
+th,
+td {
+    padding: 0.5em 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    white-space: pre;
+}
+
+th {
+    background-color: rgb(178, 174, 239);
+    font-size: larger;
+    padding: 1rem;
+}
+
+thead th,
+tbody td {
+    text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: rgb(224, 224, 224);
+}
+
+tbody tr:nth-child(even) {
+    background-color: rgb(255, 255, 255);
+}
+
+.blank {
+    background-color: rgb(48, 48, 106);
+}
