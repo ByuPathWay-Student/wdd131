@@ -1,0 +1,37 @@
+* {
+    margin: 0;
+    font-family: "Inter";
+}
+
+header {
+    background-color: rgb(131, 92, 73);
+    padding: 1rem;
+    color: rgb(255, 255, 255);
+}
+
+section div{
+    padding: 1rem;
+    background-color: rgb(255, 239, 218);
+}
+
+section {
+    padding: 1rem;
+}
+
+section h2 {
+    background-color: rgb(212, 171, 124);
+    width: 200px;
+    padding: 12px;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+section img {
+    width: 450px;
+    height: auto;
+    padding: 12px;
+}
+
+.mobile img {
+    width: 300px;
+}
