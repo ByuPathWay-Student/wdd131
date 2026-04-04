@@ -21,47 +21,54 @@
     </header>
     <main>
         <form method="get" action="review.html" class="f1" id="form1">
-            <label>Product Name<select id="pName" name="product" required>
+            <label for="pName">Product Name<select id="pName" name="product" required>
                     <option value="" disabled selected>Select a Product ...</option>
                 </select></label>
 
             <p>Overall Rating</p>
             <div class="oRating">
-                <label>&bigstar;<input type="radio" name="rating" value="oneS" required></label>
-                <label>&bigstar;&bigstar;<input type="radio" name="rating" value="twoS" required></label>
-                <label>&bigstar;&bigstar;&bigstar;<input type="radio" name="rating" value="threeS" required></label>
-                <label>&bigstar;&bigstar;&bigstar;&bigstar;<input type="radio" name="rating" value="fourS"
+                <label for="oneStar">&bigstar;<input type="radio" name="rating" value="oneS" id="oneStar"
                         required></label>
-                <label>&bigstar;&bigstar;&bigstar;&bigstar;&bigstar;<input type="radio" name="rating" value="fiveS"
+                <label for="twoStar">&bigstar;&bigstar;<input type="radio" name="rating" value="twoS" id="twoStar"
                         required></label>
+                <label for="threeStar">&bigstar;&bigstar;&bigstar;<input type="radio" name="rating" value="threeS"
+                        id="threeStar" required></label>
+                <label for="fourStar">&bigstar;&bigstar;&bigstar;&bigstar;<input type="radio" name="rating"
+                        value="fourS" id="fourStar" required></label>
+                <label for="fiveStar">&bigstar;&bigstar;&bigstar;&bigstar;&bigstar;<input type="radio" name="rating"
+                        value="fiveS" id="fiveStar" required></label>
             </div>
 
-            <label>Date of Installation<input type="date" id="iDate" name="installDate" required></label>
+            <label for="iDate">Date of Installation<input type="date" id="iDate" name="installDate" required></label>
 
             <p>Which features did you find useful in the product?</p>
             <p class="italic">(check all that apply)</p>
             <div class="uFeatures">
                 <div class="chckBox">
-                    <label><input type="checkbox" id="features" name="durability" value="check">Durability</label>
+                    <label for="feature1"><input type="checkbox" id="feature1" name="durability"
+                            value="check">Durability</label>
                 </div>
                 <div class="chckBox">
-                    <label><input type="checkbox" id="features" name="ease" value="check">Ease of Use</label>
+                    <label for="feature2"><input type="checkbox" id="feature2" name="ease" value="check">Ease of
+                        Use</label>
                 </div>
                 <div class="chckBox">
-                    <label><input type="checkbox" id="features" name="performance" value="check">Performance</label>
+                    <label for="feature3"><input type="checkbox" id="feature3" name="performance"
+                            value="check">Performance</label>
                 </div>
                 <div class="chckBox">
-                    <label><input type="checkbox" id="features" name="design" value="check">Design</label>
+                    <label for="feature4"><input type="checkbox" id="feature4" name="design"
+                            value="check">Design</label>
                 </div>
             </div>
 
             <div class="wReview">
-                <label>Written Review <p class="colorC">(Optional)</p><textarea id="tArea"
-                        name="review" rows="5"></textarea></label>
+                <label for="tArea">Written Review <p class="colorC">(Optional)</p><textarea id="tArea" name="review"
+                        rows="5"></textarea></label>
             </div>
 
             <div class="uName">
-                <label>Your Name <p class="colorC">(Optional)</p><input type="text" id="userName"
+                <label for="userName">Your Name <p class="colorC">(Optional)</p><input type="text" id="userName"
                         name="enterName"></label>
             </div>
 
