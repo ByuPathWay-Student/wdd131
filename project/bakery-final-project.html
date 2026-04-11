@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Around the Corner Bakery | Home</title>
+    <meta name="author" content="Adeline Scott">
+    <meta name="description"
+        content="WDD 131 final project | Around the Corner Bakery | The homepage for a website for a small bakery.">
+    <link rel="stylesheet" href="styles/bakery-final-project.css">
+    <script src="scripts/bakery-final-project.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="headerItems">
+            <img src="images/logo.webp" alt="The logo for the Around the Corner Bakery.">
+            <h1>Around the Corner Bakery</h1>
+            <button type="button" id="menu"></button>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="bakery-final-project.html" class="active">Home</a></li>
+                <li><a href="bakery-final-project-menu.html">Menu</a></li>
+                <li><a href="bakery-final-project-order.html">Place an Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero">
+            <picture>
+                <source srcset="images/hero-large.jpg" media="(min-width:950px)">
+                <img class="hero" src="images/hero-small.jpg" alt="An assortment of baked goods">
+            </picture>
+        </div>
+        <div class="infoSections">
+            <section class="information">
+                <h2>About Us</h2>
+                <p>We are a small bakery focused on making a cozy atmosphere to anyone who comes to visit. We have a
+                    wide selection of baked goods ranging from different breads, to desserts. We make gourmet baked
+                    goods affordable for anyone!</p>
+            </section>
+            <section class="placeorder">
+                <div>
+                    <h2>Want to place an order?</h2>
+                    <p>We do online orders that you can pick up and take home!</p>
+                    <ul>
+                        <li>
+                            <a href="bakery-final-project-order.html" class="orderButton">Order Here</a>
+                        </li>
+                    </ul>
+                </div>
+                <img src="images/macaron.jpg" alt="A picture of stacked macarons." loading="lazy">
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> | Adeline Scott | United States</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

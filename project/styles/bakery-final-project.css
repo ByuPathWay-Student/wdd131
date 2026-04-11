@@ -1,0 +1,330 @@
+:root {
+    --primary-color: rgb(99, 69, 53);
+    --secondary-color: rgb(255, 239, 218);
+    --accent-color1: rgb(212, 171, 124);
+    --accent-color2: rgb(255, 255, 255);
+}
+
+* {
+    margin: 0;
+    font-family: "Inter";
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--accent-color2);
+    padding: 2rem;
+}
+
+header img {
+    width: 200px;
+    height: auto;
+    margin-left: 4.5rem;
+}
+
+header h1 {
+    width: 250px;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: 3rem;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.information {
+    padding: 1rem;
+    border-bottom: 2px solid var(--primary-color);
+    background-color: var(--secondary-color);
+    margin-top: 0;
+}
+
+.information p {
+    padding: 1rem;
+}
+
+.information h2 {
+    text-align: center;
+    background-color: var(--accent-color1);
+    border-radius: 20px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.placeorder {
+    background-color: var(--secondary-color);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.placeorder div {
+    padding: 0.9rem;
+}
+
+.placeorder img {
+    width: 200px;
+    height: auto;
+    border: 5px solid var(--accent-color1);
+}
+
+.orderButton {
+    background-image: linear-gradient(rgb(255, 143, 95), rgb(234, 105, 40));
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 12px;
+    border: 2px solid var(--primary-color);
+}
+
+.placeorder li {
+    list-style: none;
+    margin-top: 3rem;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--primary-color);
+    padding: 2rem;
+    text-align: center;
+    color: var(--accent-color2)
+}
+
+
+#menu {
+    position: absolute;
+    top: 2rem;
+    left: 1rem;
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: var(--accent-color2);
+    font-weight: bold;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.navigation {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+
+.navigation a {
+    display: none;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: large;
+    text-align: center;
+    margin-right: 2rem;
+    color: var(--accent-color2);
+}
+
+.navigation a:hover {
+    background-color: var(--secondary-color);
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+}
+
+
+.open a {
+    display: block;
+}
+
+.orderButton:active {
+    background-image: none;
+    background-color: rgb(96, 27, 6);
+    color: var(--accent-color2);
+}
+
+.menuHeader, .orderHeader {
+    text-align: center;
+    padding: 2rem;
+    background-color: var(--accent-color1);
+}
+
+.menuBody, .orderBody, .thxPg {
+    background-color: var(--secondary-color);
+}
+
+.menuImages figure {
+    margin-top: 3rem;
+    text-align: center;
+    border-bottom: 1.5px solid var(--primary-color);
+}
+
+.menuImages img {
+    width: 200px;
+    border: solid 2px var(--primary-color);
+}
+
+.menuImages p {
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.orderForm {
+    margin-top: 1.5rem;
+    margin-left: 1.5rem;
+}
+
+.orderForm input[type="number"],
+.orderForm input[type="date"],
+.orderForm input[type="tel"],
+.orderForm select,
+.orderForm textarea {
+    display: block;
+    padding: .65rem;
+    margin-bottom: 1.5rem;
+    width: 250px;
+    font-size: 15px;
+}
+
+.orderForm label {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.orderForm select {
+    width: 275px
+}
+
+.tchange {
+    font-weight: 400;
+}
+
+.orderForm input[type="submit"] {
+    padding: .65rem;
+    background-color: rgb(255, 143, 95);
+    width: 50%;
+    border-radius: 5px;
+    font-size: 17px;
+}
+
+.orderForm input[type="submit"]:active, .orderAgain:active {
+    background-color: rgb(96, 27, 6);
+    color: var(--accent-color2)
+}
+
+.infoText {
+    color:rgb(14, 22, 242);
+    padding: 1.5rem;
+    font-style: italic;
+}
+
+.thxPg h2{
+    text-align: center;
+    background-color: var(--accent-color1);
+    padding: 2rem;
+}
+
+.thxPg p {
+    margin-left: 1.5rem;
+    padding: 1rem;
+}
+
+.thxPg h3 {
+    margin-left: 1rem;
+    margin-top: 1rem;
+    background-color: var(--accent-color1);
+    width: 150px;
+    padding: .5rem;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.secondOrder li {
+    list-style: none;
+}
+
+.orderAgain {
+    background-color: rgb(255, 143, 95);
+    padding: .65rem;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.secondOrder {
+    text-align: center;
+    padding: 5rem;
+}
+
+@media screen and (min-width: 850px) {
+
+    #menu {
+        display: none;
+    }
+
+    .navigation {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .navigation a {
+        display: flex;
+        margin-top: 10rem;
+    }
+
+    header {
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: row-reverse;
+    }
+
+    main {
+        max-width: 1000px;
+        margin: auto;
+        box-shadow: 0 0 15px var(--primary-color);
+    }
+
+    .infoSections {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        border: 2px solid var(--primary-color);
+    }
+
+    .information {
+        border-bottom: 0;
+        border-right: 2px solid var(--primary-color);
+    }
+
+    .placeorder img {
+        width: 225px;
+    }
+
+    .placeorder h2 {
+        margin-bottom: 1rem;
+    }
+
+    .hero img {
+        width: 1000px;
+    }
+
+    header {
+        display: flex;
+    }
+
+    .menuImages {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .menuImages figure {
+        border-bottom: 0;
+    }
+
+}

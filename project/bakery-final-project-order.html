@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Around the Corner Bakery | Order</title>
+    <meta name="author" content="Adeline Scott">
+    <meta name="description"
+        content="WDD 131 final project | Around the Corner Bakery | The order page for a website for a small bakery.">
+    <link rel="stylesheet" href="styles/bakery-final-project.css">
+    <script src="scripts/bakery-final-project-order.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="headerItems">
+            <img src="images/logo.webp" alt="The logo for the Around the Corner Bakery.">
+            <h1>Around the Corner Bakery</h1>
+            <button type="button" id="menu"></button>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="bakery-final-project.html" class="active">Home</a></li>
+                <li><a href="bakery-final-project-menu.html">Menu</a></li>
+                <li><a href="bakery-final-project-order.html">Place an Order</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="orderBody">
+        <h2 class="orderHeader">Order</h2>
+        <form method="get" action="bakery-final-project-thanks.html" class="orderForm" id="order">
+            <div class="selProduct">
+                <label for="product">Food Item*<select id="product" name="foodSelect" required>
+                        <option value="" disabled selected>Choose an option...</option>
+                    </select></label>
+            </div>
+
+            <div class="numEnter">
+                <label for="amount">Number of Items* <input type="number" min="1" max="100" id="amount" name="numberItems"
+                        required></label>
+            </div>
+            
+            <div class="dateEnter">
+                <label for="pickupDay">Pick up Date* <input type="date" id="pickupDay" name="pDate" required></label>
+            </div>
+            
+            <div class="phoneEnter">
+                <label for="pNumber">Phone Number*<input type="tel" id="pNumber" name="phoneNum"
+                        placeholder="1234441234" required></label>
+            </div>
+            
+            <div class="notesEnter">
+                <label for="notes">Notes About The Order <span class="tchange">(Optional)</span><textarea id="notes"
+                        name="nText" rows="5"></textarea></label>
+            </div>
+            
+            <input type="submit" value="Place the Order">
+        </form>
+        <p class="infoText">*Required</p>
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear"></span> | Adeline Scott | United States</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
